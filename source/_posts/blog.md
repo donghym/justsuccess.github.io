@@ -23,6 +23,11 @@ title: 如何在gitHub 上“白嫖”一个博客网站
     cd <folder>
     npm install
  ```
+ 建立本地文件夹与gitHub 仓库的联系
+```
+    git init // 初始化本地
+    git remote add origen git@github.com:<gitHub Name>/<gitHub Name>.github.io.git
+```
  ##### 搭建本地服务器
 ```node
     npm install hexo-server --save
@@ -40,7 +45,8 @@ github 虽然也可以读取到md 文件，但也只能读取到maskdown 文件�
 ```
     hexo g // g 是 generate 的简写
 ```
-可以监视文件变化
+可以监视文件变化 至少官网是这么说的，实践中发现不写-w 也是可以的
+
 ```
     hexo g -w // -w 是 --watch 的缩写
 ```
@@ -55,7 +61,7 @@ github 虽然也可以读取到md 文件，但也只能读取到maskdown 文件�
 
 修改配置信息
 ```
-    auther: <Your Name>
+    auther: <gitHub Name>
 ···
     // 这将是你的博客地址
     url: <gitHub Name>.github.io
@@ -69,5 +75,7 @@ github 虽然也可以读取到md 文件，但也只能读取到maskdown 文件�
 ```
     hexo clean && hexo d // deploy
 ```
+过一会儿 用浏览器访问 <gitHub Name>.github.io 就可以访问到你自己的博客了
+ 关注我，下一期 持续发布博客的流程
 ##### 以上全是废话
 详细的建站流程参照 [Hexo官网](https://hexo.io/zh-cn/docs) 里面有详细的教程
