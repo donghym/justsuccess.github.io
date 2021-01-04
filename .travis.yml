@@ -8,7 +8,7 @@ install:
 scripts:
   - hexo clean
   - hexo g
-afterscripts:
+after_script:
   - cd ./public
   - git init
   - git config user.name "donghym"
