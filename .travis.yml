@@ -14,7 +14,7 @@ after_script:
   - git config user.name "donghym"
   - git config user.email "956341817@qq.com"
   - git add .
-  - git commit -m "来自travis自动部署的代码"
+  - git commit -m "commit from travis"
   - git push --force --quiet "https://${justsuccess}@${GH_REF}" master:master
 branches:
   only:
