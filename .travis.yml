@@ -1,0 +1,24 @@
+language: node_js
+node_js: stable
+cache:
+  disectories: 
+  - node_modules
+install:
+  - npm install
+scripts:
+  - hexo clean
+  - hexo g
+afterscripts:
+  - cd ./public
+  - git init
+  - git config user.name "donghym"
+  - git config user.email "956341817@qq.com"
+  - git add .
+  - git commit -m "来自travis自动部署的代码"
+  - git push --force --quiet "https://${justsuccess}" master:master
+branches:
+  only:
+    - main
+env:
+  global:
+    - GH_REF: github.com/justsuccess/justsuccess.github.io.git
