@@ -47,4 +47,4 @@ branches:
 env:
   global:
     # Github Pages
-    - GH_REF: github.com/xxxr/xxx.github.io.git
+    - GH_REF: github.com/justsuccess/justsuccess.github.io.git
