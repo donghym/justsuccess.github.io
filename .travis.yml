@@ -3,31 +3,31 @@ language: node_js
 node_js: stable
  
 cache:
-    apt: true
-    directories:
-        - node_modules
+  apt: true
+  directories:
+    - node_modules
  
 notifications:
     email:
-        recipients:
-            - 956341817@qq.com #你的邮箱地址
-        on_success: change
-        on_failure: always
+      recipients:
+        - 956341817@qq.com #你的邮箱地址
+      on_success: change
+      on_failure: always
  
 # turn off the clone of submodules for change the SSH to HTTPS in .gitmodules to avoid the error
 git:
   submodules: false
         
 before_install:
-    - export TZ='Asia/Shanghai'
-    - npm install hexo-cli -g
+  - export TZ='Asia/Shanghai'
+  - npm install hexo-cli -g
  
 install:
-    - npm install
+  - npm install
  
 script:
-    - hexo clean
-    - hexo g
+  - hexo clean
+  - hexo g
  
 after_script:
   - cd ./public
@@ -39,10 +39,10 @@ after_script:
   - git push --force --quiet "https://${justsuccess}@${GH_REF}" master:master
  
 branches:
-    only:
-        - master
+  only:
+    - main
  
 env:
-    global:
-        # Github Pages
-        - GH_REF: github.com/xxxr/xxx.github.io.git
+  global:
+    # Github Pages
+    - GH_REF: github.com/xxxr/xxx.github.io.git
