@@ -39,7 +39,6 @@ after_script:
   - git add .
   - git commit -m "Update blog content by Travis CI"
   - git push --force --quiet "https://${justsuccess}@${GH_REF}" master:master
-  echo "success"
 branches:
   only:
     - main
