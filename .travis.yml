@@ -43,7 +43,6 @@ after_script:
 branches:
   only:
     - main
- 
 env:
   global:
     # Github Pages
