@@ -1,11 +1,10 @@
 
 language: node_js
-os: windows
 node_js: 
   - 14
  
 cache:
-  apt: false
+  apt: true
   directories:
     # - node_modules
  
@@ -39,9 +38,11 @@ after_script:
   - git add .
   - git commit -m "Update blog content by Travis CI"
   - git push --force --quiet "https://${justsuccess}@${GH_REF}" master:master
+ 
 branches:
   only:
     - main
+ 
 env:
   global:
     # Github Pages
