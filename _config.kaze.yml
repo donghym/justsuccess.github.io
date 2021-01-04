@@ -1,0 +1,10 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: donghaiyang
+author: donghym
+logo_img: /img/dhy.jpg # put the logo on the ${blog_path}/source/img/${picname}.png or use urls
+author_img: /img/dhy.jpg
+author_description: designed by dhy
