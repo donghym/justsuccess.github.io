@@ -1,9 +1,8 @@
 ---
 title: 如何在gitHub 上“白嫖”一个博客网站
 ---
-# 利用 hexo 创建一个博客网站
-  可以参观 [我的博客](https://justsuccess.github.io),完全免费创建，不要998，不要88 ，完全免费，完全免费...
-  下面我介绍一下这个过程
+travis 是一个自动化CI 流程
+  ![图片](../img/dhy.jpg)
 ## 1、首先有个gitHub 的账号
  没有的小伙伴赶紧到 [gitHub官网](https://github.com/) 注册一个
  新建一个工程，
