@@ -1,5 +1,5 @@
 ---
-title: 博客的自动化部署发布
+title: 如何在gitHub 上“白嫖”一个博客网站
 date: 2021-01-03
 tags:
     - CI

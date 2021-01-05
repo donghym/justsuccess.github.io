@@ -1,6 +1,6 @@
 ---
-title: 如何在gitHub 上“白嫖”一个博客网站
-date: 2021-01-03 20:30:44
+title: 博客的自动化部署发布
+date: 2021-01-04 20:30:44
 categories: gitHub
 tags:
     - gitHub
