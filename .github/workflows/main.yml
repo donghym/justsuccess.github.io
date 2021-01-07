@@ -18,8 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: ubuntu-latest
-
+    runs-on: window-latest
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -34,10 +33,14 @@ jobs:
           npm install
           hexo clean
           hexo g
+  git:
+    needs: build
+      - name: Run a one-line script
+        run: |
           cd ./public
           git init
           git config user.name "donghym"
           git config user.email "956341817@qq.com"
           git add .
           git commit -m "Update blog content by Travis CI"
-          git push --force --quiet "https://${{secrets.NPM_AUTH_TOKEN }}@${{secrets.GH_REF}}" master:master
+          git push --force --quiet "https://${{secrets.NPM_AUTH_TOKEN}}@${{secrets.GH_REF}}" master:master

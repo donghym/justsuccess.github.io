@@ -6,7 +6,7 @@ tags:
     - gitHub
     - CI
 ---
-travis 是一个自动化CI 流程
+travis 一个使用yaml格式配置用于持续集成完成自动化测试部署的开源项目
   ![图片](/img/dhy.jpg)
 
 
