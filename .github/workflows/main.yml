@@ -35,7 +35,9 @@ jobs:
           hexo g
   git:
     needs: build
-      - name: Run a one-line script
+    runs-on: window-latest
+    steps: 
+      - name: Another
         run: |
           cd ./public
           git init
