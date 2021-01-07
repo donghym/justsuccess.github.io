@@ -27,17 +27,13 @@ jobs:
         with:
           node-version: 14
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: npm install
         run: |
           npm install hexo-cli -g
           npm install
           hexo clean
           hexo g
-  git:
-    needs: build
-    runs-on: window-latest
-    steps: 
-      - name: Another
+      - name: git
         run: |
           cd ./public
           git init
